@@ -1,0 +1,40 @@
+{
+  "recommendations": [
+    {
+      "id": "CM-001",
+      "name": "Leading Pedestrian Interval (LPI)",
+      "description": "Gives pedestrians a 3-7 second head start at signalized intersections.",
+      "applicable_crash_types": ["vehicle-pedestrian"],
+      "crash_reduction_factor": "15-60%",
+      "source": "FHWA Proven Safety Countermeasure",
+      "estimated_cost": "$5,000 - $15,000"
+    },
+    {
+      "id": "CM-002",
+      "name": "Roundabout",
+      "description": "Replaces a traditional intersection with a circular design, reducing conflict points.",
+      "applicable_crash_types": ["vehicle_vehicle", "failure_to_yield"],
+      "crash_reduction_factor": "35-80%",
+      "source": "FHWA Proven Safety Countermeasure",
+      "estimated_cost": "$500,000 - $2,000,000"
+    },
+    {
+      "id": "CM-003",
+      "name": "Road Diet / Lane Reconfiguration",
+      "description": "Reduces the number of travel lanes and adds features like a two-way left-turn lane or bike lanes.",
+      "applicable_crash_types": ["speeding", "vehicle_vehicle"],
+      "crash_reduction_factor": "19-47%",
+      "source": "FHWA Proven Safety Countermeasure",
+      "estimated_cost": "$100,000 - $1,000,000 per mile"
+    },
+    {
+      "id": "CM-004",
+      "name": "Rectangular Rapid Flashing Beacons (RRFB)",
+      "description": "User-activated beacons at unsignalized crosswalks to alert drivers to pedestrians.",
+      "applicable_crash_types": ["vehicle-pedestrian"],
+      "crash_reduction_factor": "47%",
+      "source": "FHWA Proven Safety Countermeasure",
+      "estimated_cost": "$15,000 - $40,000"
+    }
+  ]
+}

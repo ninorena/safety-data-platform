@@ -1,0 +1,85 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Elm Street",
+        "class": "Principal Arterial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -97.02,
+            38.0023
+          ],
+          [
+            -96.98,
+            38.0023
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oak Avenue",
+        "class": "Principal Arterial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -97.0088,
+            38.03
+          ],
+          [
+            -97.0088,
+            37.97
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Maple Boulevard",
+        "class": "Minor Arterial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -97.0016,
+            38.03
+          ],
+          [
+            -97.0016,
+            37.99
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pine Road",
+        "class": "Principal Arterial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -97.08,
+            37.9982
+          ],
+          [
+            -96.96,
+            37.9982
+          ]
+        ]
+      }
+    }
+  ]
+}

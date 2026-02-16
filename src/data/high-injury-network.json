@@ -1,0 +1,109 @@
+{
+  "intersections": [
+    {
+      "name": "Elm St & Maple Ave",
+      "latitude": 38.0023,
+      "longitude": -97.0019,
+      "total_crashes": 34,
+      "fatal": 0,
+      "serious_injury": 0,
+      "severity_score": 17,
+      "primary_crash_types": [
+        "vehicle_vehicle",
+        "vehicle-pedestrian"
+      ]
+    },
+    {
+      "name": "Oak Blvd & Pine St",
+      "latitude": 38.0088,
+      "longitude": -97.0065,
+      "total_crashes": 0,
+      "fatal": 0,
+      "serious_injury": 0,
+      "severity_score": 0,
+      "primary_crash_types": []
+    },
+    {
+      "name": "Cedar Ln & Willow Dr",
+      "latitude": 37.9982,
+      "longitude": -97.0055,
+      "total_crashes": 0,
+      "fatal": 0,
+      "serious_injury": 0,
+      "severity_score": 0,
+      "primary_crash_types": []
+    },
+    {
+      "name": "Elm St & Oak Blvd",
+      "latitude": 38.0025,
+      "longitude": -97.0064,
+      "total_crashes": 0,
+      "fatal": 0,
+      "serious_injury": 0,
+      "severity_score": 0,
+      "primary_crash_types": []
+    },
+    {
+      "name": "Pine St & Spruce Dr",
+      "latitude": 37.9897,
+      "longitude": -97.002,
+      "total_crashes": 0,
+      "fatal": 0,
+      "serious_injury": 0,
+      "severity_score": 0,
+      "primary_crash_types": []
+    },
+    {
+      "name": "Maple Ave & Sycamore Ln",
+      "latitude": 38.0088,
+      "longitude": -97.0016,
+      "total_crashes": 0,
+      "fatal": 0,
+      "serious_injury": 0,
+      "severity_score": 0,
+      "primary_crash_types": []
+    },
+    {
+      "name": "Ash Rd & Birch Cir",
+      "latitude": 37.9928,
+      "longitude": -97.0038,
+      "total_crashes": 0,
+      "fatal": 0,
+      "serious_injury": 0,
+      "severity_score": 0,
+      "primary_crash_types": []
+    }
+  ],
+  "corridors": [
+    {
+      "name": "Oak Blvd Corridor (North)",
+      "crash_count": 45,
+      "severity_score": 52,
+      "coordinates": [
+        [
+          -96.9912,
+          38.0075
+        ],
+        [
+          -96.9912,
+          38.0025
+        ]
+      ]
+    },
+    {
+      "name": "Elm St Corridor (East)",
+      "crash_count": 60,
+      "severity_score": 75.5,
+      "coordinates": [
+        [
+          -97.0019,
+          38.0023
+        ],
+        [
+          -97.001,
+          38.0023
+        ]
+      ]
+    }
+  ]
+}
