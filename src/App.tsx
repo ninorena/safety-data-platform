@@ -1,4 +1,5 @@
 import React from 'react';
+import { ViewProvider, useView } from './context/ViewContext';
 import Header from './components/layout/Header';
 import Sidebar from './components/layout/Sidebar';
 import PageWrapper from './components/layout/PageWrapper';
@@ -9,36 +10,48 @@ import HighInjuryView from './components/network/HighInjuryView';
 import CountermeasureView from './components/countermeasures/CountermeasureView';
 import SS4AReportingView from './components/reporting/SS4AReportingView';
 
-const App: React.FC = () => {
+const AppContent: React.FC = () => {
+  const { currentView } = useView();
+
+  const renderView = () => {
+    switch (currentView) {
+      case 'dashboard':
+        return <DashboardView />;
+      case 'map':
+        return <MapView />;
+      case 'analysis':
+        return <PatternAnalysisView />;
+      case 'high-injury':
+        return <HighInjuryView />;
+      case 'countermeasures':
+        return <CountermeasureView />;
+      case 'reporting':
+        return <SS4AReportingView />;
+      default:
+        return <DashboardView />;
+    }
+  };
+
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
+    <div className="flex flex-col h-screen bg-gray-50">
       <Header />
-      <div style={{ display: 'flex', flex: 1 }}>
+      <div className="flex flex-1 overflow-hidden">
         <Sidebar />
-        <main style={{ flex: 1, padding: '1rem', overflowY: 'auto' }}>
-          <h1>City of Safety Data Platform</h1>
+        <main className="flex-1 overflow-y-auto">
           <PageWrapper>
-            <h2>Dashboard</h2>
-            <DashboardView />
-            <hr />
-            <h2>Crash Map</h2>
-            <MapView />
-            <hr />
-            <h2>Pattern Analysis</h2>
-            <PatternAnalysisView />
-            <hr />
-            <h2>High-Injury Network</h2>
-            <HighInjuryView />
-            <hr />
-            <h2>Countermeasures</h2>
-            <CountermeasureView />
-            <hr />
-            <h2>SS4A Reporting</h2>
-            <SS4AReportingView />
+            {renderView()}
           </PageWrapper>
         </main>
       </div>
     </div>
+  );
+};
+
+const App: React.FC = () => {
+  return (
+    <ViewProvider>
+      <AppContent />
+    </ViewProvider>
   );
 };
 

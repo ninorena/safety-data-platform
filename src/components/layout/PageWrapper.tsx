@@ -1,7 +1,15 @@
 import React from 'react';
 
-const PageWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  return <div>{children}</div>;
+interface PageWrapperProps {
+  children: React.ReactNode;
+}
+
+const PageWrapper: React.FC<PageWrapperProps> = ({ children }) => {
+  return (
+    <div className="max-w-7xl mx-auto p-6">
+      {children}
+    </div>
+  );
 };
 
 export default PageWrapper;
