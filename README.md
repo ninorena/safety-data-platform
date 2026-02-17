@@ -16,7 +16,7 @@ This prototype provides a clickable, functional interface for exploring traffic 
 - Real data sourced from structured crash records
 
 ### Interactive Crash Map
-- **Map Visualization** – Geographic plot of all crash incidents using Mapbox GL JS
+- **Map Visualization** – Geographic plot of all crash incidents using Leaflet and OpenStreetMap
 - **Severity Color-Coding** – Crashes color-coded by severity:
   - Red: Fatal crashes
   - Orange: Serious injury crashes
@@ -24,6 +24,7 @@ This prototype provides a clickable, functional interface for exploring traffic 
   - Blue: Property damage only
 - **Incident Details** – Click any marker to view crash specifics (date, time, location, injuries/fatalities)
 - **Filtering by Severity** – Toggle visibility of different crash types
+- **No API Key Required** – Uses free, open-source OpenStreetMap tiles
 
 ### Pattern Analysis
 - **Temporal Patterns** – Identify when crashes occur most frequently:
@@ -55,7 +56,7 @@ This prototype provides a clickable, functional interface for exploring traffic 
 - **Frontend Framework:** React 19 with TypeScript
 - **Build Tool:** Vite 7
 - **Styling:** Tailwind CSS 4.1 with PostCSS
-- **Mapping:** Mapbox GL JS 3
+- **Mapping:** Leaflet (free, open-source) + OpenStreetMap tiles
 - **Charts:** Recharts 3
 - **Node:** TypeScript 5.9
 
@@ -70,19 +71,14 @@ cd safety-data-platform
 npm install
 ```
 
-### Configuration
-The app requires a Mapbox API token to display the interactive map:
-
-1. Get a token from [Mapbox](https://account.mapbox.com/)
-2. Copy `.env.example` to `.env.local`
-3. Add your token: `VITE_MAPBOX_TOKEN=your_token_here`
-
 ### Running Locally
 ```bash
 npm run dev
 ```
 
 The prototype will open at `http://localhost:5173/` (or the next available port).
+
+**No configuration required!** The app uses free, open-source OpenStreetMap tiles for mapping. No API keys or credit card information needed.
 
 ### Building for Production
 ```bash
@@ -162,10 +158,10 @@ Use the sidebar to switch between views:
 
 ## Notes
 
-- **Mapbox Token Required:** The map requires a Mapbox API token. Copy `.env.example` to `.env.local` and add your token.
+- **Free Mapping:** Uses Leaflet and OpenStreetMap tiles – no API keys, tokens, or payment information required.
 - All data is dummy/demonstration data suitable for prototyping.
 - The prototype is fully functional and ready for stakeholder review and feedback.
-- See `.env.example` for required environment variables.
+- Map attribution: © OpenStreetMap contributors
 
 ## Future Enhancements
 
